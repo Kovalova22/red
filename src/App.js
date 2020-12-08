@@ -1,25 +1,23 @@
-import logo from './logo.svg';
+import React, { Component } from 'react/cjs/react.production.min';
 import './App.css';
+import Modal from './Components/Modal';
+import Allhotdogs from './Components/Allhotdogs';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+            <header className='App-header'>
+            <div className='header-left'><img className='img-header' src='https://hiphiphooray.com.sg/wp-content/uploads/2017/10/Hip_Hip_Hooray_Hotdog.jpg' 
+            alt='logo'/>
+            <h1>Crud</h1> </div>
+            <Modal />
+            </header>
+            <h2>All Hot-dogs</h2>
+            <Allhotdogs />
+      </div>
+    );
+  }
 }
 
 export default App;

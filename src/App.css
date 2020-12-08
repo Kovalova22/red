@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
+body {
+  font-family: 'Noto Sans JP', sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+margin: 20px;
+border-top: 1px solid black;
+border-bottom: 1px solid black;
+display: flex;
+justify-content: space-between;
+}
+.header-left {
+display: flex;
+align-items: flex-start;
 }
 
-.App-link {
-  color: #61dafb;
+.img-header {
+height: 30px;
+width: 70px;
+margin: 20px;
+}
+.App-header h1 {
+padding: 10px 20px;
+margin:20px;
+text-transform: uppercase;
+letter-spacing: 2px;
+border: 3px solid black;
+width: 105px;
+height: 45px;
+font-size: 20px;
+font-weight: 700;
+background-color: #333333;
+color: white;
+background-origin: border-box;
+}
+.main-modal-button {
+border: none;
+background-color: transparent;
+margin: 30px 20px;
+height: 25px;
+display: flex;
+justify-content: space-between; 
+} 
+.main-modal-button:hover { 
+background-color: beige;
+border-radius: 5%;
+height: 25px;
+cursor: pointer;
+}
+.main-modal-button:focus {
+outline: none;
+}
+h2 {
+margin: 20px 20px 20px 70px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.article-button {
+display: flex;
+justify-content: center;
+flex-flow: column wrap;
+width: 200px;
+border: none; 
+}
+.article-button-item {
+display: flex;
+flex-flow: column wrap;
+align-items: center;
+margin: 5px 0;
+width: 200px;
+border: none;
+padding: 5px;
+
+}
+.article-button-item:hover{
+cursor: pointer;
+}
+.modal-input {
+margin: 7px 0;
+width: 190px;
+height: 35px;
+font-size: large;
+}
+
+.modal {
+background: rgba(0, 0, 0, 0.5);
+padding-top: 7rem;
+padding-left: 20rem;
+
+}
+.modal-body {
+padding: 20px;
+width: 240px;
+border-radius: 2px;
+background: #fff;
+height: 370px;
+}
+.modal-button {
+display: flex;
+flex-direction: row;
+align-items: flex-end;
+}
+.modal-button-item {
+border: solid black 1px;
+background-color: black;
+color: white;
+padding: 10px;
+margin-top: 30px;
+}
+.modal-button-item:hover {
+border: solid #0066ff 1.5px;
+cursor: pointer;
+}
+.articles {
+margin: 20px 30px;
+display: flex;
+flex-flow: row wrap;
+
+
+}
+ul {
+
+list-style: none;
+margin:10px;
+width: 200px;
+box-sizing: border-box;
+}  
+.menu-items {
+margin: 5px;
+width: 200px;
+box-sizing: border-box;
+word-wrap: break-word;
+} 
+hr {
+margin: 20px 70px;
+}
+.price {
+color: #999999;
+font-size: small;
+}
+.item-name {
+font-size: large;
+font-weight: 600;
 }
