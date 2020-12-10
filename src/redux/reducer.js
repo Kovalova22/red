@@ -1,6 +1,7 @@
 import * as ActionTypes from './ActionTypes';
+import { HOTDOGS } from './hotdogs';
 
-const reducer = (state = [], action) => {
+const reducer = (state = HOTDOGS, action) => {
     switch(action.type){
         case ActionTypes.ADD_HOTDOG:
             return state.concat([action.data]);

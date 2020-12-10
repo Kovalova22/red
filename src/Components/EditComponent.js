@@ -20,16 +20,16 @@ class EditComponent extends Component{
         return(
             <form onSubmit={this.handleEdit}>
             <ul>
-            <li><input type='text' name='image' style={{width:'200px'}}
+            <li><input type='text' name='image' style={{width:'198px', height:'25px'}}
             ref = {(input) => this.getImage = input} 
             defaultValue={this.props.hotdog.image}/></li>
-            <li><input type='text' name='name' style={{width:'200px'}}
+            <li><input type='text' name='name' style={{width:'198px', height:'25px'}}
             ref = {(input) => this.getName = input}
             defaultValue={this.props.hotdog.name} /></li>
-            <li><input type='text' name='title' style={{width:'200px'}}
+            <li><input type='text' name='title' style={{width:'198px', height:'25px'}}
             ref = {(input) => this.getTitle = input} 
             defaultValue={this.props.hotdog.title}/></li>
-            <li><textarea type='text' name='description' style={{width:'200px'}}
+            <li><textarea type='text' name='description' style={{width:'200px', height:'50px',resize:'none'}}
             ref = {(input) => this.getDescription = input} 
             defaultValue={this.props.hotdog.description}/></li>
             <button className='article-button-item'>Upgrade</button>

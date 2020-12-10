@@ -1,24 +1,15 @@
 import * as ActionTypes from './ActionTypes';
 
-export const addHotdog = (hotdogId, name, title, description, image) => ({
-    type: ActionTypes.ADD_HOTDOG,
-    payload: {
-        hotdogId: hotdogId,
-        name: name,
-        title: title,
-        description: description,
-        image: image
-    }
-});
+export const showModal = ({ modalProps, modalType }) => dispatch => {
+    dispatch({
+        type: ActionTypes.SHOW_MODAL,
+        modalProps,
+        modalType
+    });
+}
 
-export const editHotdog = () => ({
-    type: ActionTypes.EDIT_HOTDOG,
-    payload: {}
-});
-
-export const deleteHotdog = (hotdogId) => ({
-    type: ActionTypes.DELETE_HOTDOG,
-    payload: {
-        hotdogId: hotdogId
-    }
-});
+export const hideModal =() => dispatch => {
+    dispatch({
+        type: ActionTypes.HIDE_MODAL
+    });
+}

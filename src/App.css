@@ -24,8 +24,8 @@ margin:20px;
 text-transform: uppercase;
 letter-spacing: 2px;
 border: 3px solid black;
-width: 105px;
-height: 45px;
+width: 70px;
+height: 25px;
 font-size: 20px;
 font-weight: 700;
 background-color: #333333;
@@ -43,7 +43,7 @@ justify-content: space-between;
 .main-modal-button:hover { 
 background-color: beige;
 border-radius: 5%;
-height: 25px;
+height: 20px;
 cursor: pointer;
 }
 .main-modal-button:focus {
@@ -65,7 +65,7 @@ display: flex;
 flex-flow: column wrap;
 align-items: center;
 margin: 5px 0;
-width: 200px;
+width: 205px;
 border: none;
 padding: 5px;
 
@@ -81,9 +81,9 @@ font-size: large;
 }
 
 .modal {
-background: rgba(0, 0, 0, 0.5);
 padding-top: 7rem;
 padding-left: 20rem;
+
 
 }
 .modal-body {
@@ -124,7 +124,7 @@ width: 200px;
 box-sizing: border-box;
 }  
 .menu-items {
-margin: 5px;
+margin: 10px;
 width: 200px;
 box-sizing: border-box;
 word-wrap: break-word;
@@ -139,4 +139,18 @@ font-size: small;
 .item-name {
 font-size: large;
 font-weight: 600;
+}
+.ReactModal__Content {
+  width: 330px;
+  height: 450px;
+  overflow: -moz-hidden-unscrollable;
+  box-sizing: border-box;
+  margin-left: 230px;
+}
+.modal-body {
+  height: 300px;
+  width: 250px;
+}
+.modal-title {
+  margin-left: 20px;
 }

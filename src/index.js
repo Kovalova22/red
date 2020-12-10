@@ -3,11 +3,25 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 
-import { createStore } from 'redux';
+import { createStore, applyMiddleware, combineReducers } from 'redux';
 import { Provider } from 'react-redux';
 import reducer from './redux/reducer';
+import Modal from './redux/modalReducer';
+import thunk from 'redux-thunk';
+import logger from 'redux-logger';
 
-const store = createStore(reducer);
+export const ConfigureStore = () => {
+  const store = createStore(
+      combineReducers({
+          hotdogs: reducer,
+          modal: Modal
+      }),
+      applyMiddleware(thunk, logger)
+  );
+
+  return store;
+}
+const store = ConfigureStore();
 
 ReactDOM.render( 
   <Provider store={store}>
